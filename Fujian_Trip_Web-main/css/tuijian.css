@@ -3,7 +3,6 @@
 }
 
 .centerbox .title>h1 {
-	margin: 0;
 	text-align: center;
 	margin: 20px 0;
 }
@@ -76,4 +75,8 @@
 	background-color: #fafafa;
 	border: 1px solid #d8d8d8;
 	border-top:1px #fafafa solid;
+}
+
+.form-button img:hover {
+    cursor: pointer;
 }
