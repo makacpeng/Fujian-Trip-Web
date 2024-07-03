@@ -3,6 +3,7 @@
 }
 
 .centerbox .title>h1 {
+	margin: 0;
 	text-align: center;
 	margin: 20px 0;
 }
@@ -33,7 +34,7 @@
 
 .centerbox .scenerylist>li:nth-child(odd) {
 	width: 32.8%;
-	height: 330px;
+	height: 400px;
 }
 
 .centerbox .scenerylist>li:nth-child(even) {
@@ -76,7 +77,17 @@
 	border: 1px solid #d8d8d8;
 	border-top:1px #fafafa solid;
 }
-
-.form-button img:hover {
-    cursor: pointer;
+.center-container {
+    text-align: center;
+}
+.fixed-size-image {
+    width: 600px;  
+    height: 350px; 
+}
+.center-text {
+    margin-top: 10px; /* 文字与图片的间距 */
+    width: 600px; /* 设置文本容器宽度 */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify; /* 使文本两端对齐 */
 }
