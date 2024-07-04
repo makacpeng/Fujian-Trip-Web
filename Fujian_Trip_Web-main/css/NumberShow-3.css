@@ -1,0 +1,49 @@
+.viewcontaer {
+    padding: 60px 15%;
+}
+
+.viewbox {
+    display: flex;
+}
+
+.viewbox-left {
+    width: 30%;
+}
+
+.viewbox-right {
+    width: 70%;
+}
+
+.viewbox ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.viewbox ul li {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.viewbox ul li:hover {
+    color: #fff;
+    background-color: #32A071;
+}
+
+.view-title {
+    padding: 10px 20px;
+}
+
+.viewbox-img {
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.img-auto {
+    max-width: 100%;
+    height: auto;
+}

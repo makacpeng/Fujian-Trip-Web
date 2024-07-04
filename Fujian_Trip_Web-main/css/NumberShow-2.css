@@ -1,0 +1,98 @@
+.artscontainer {
+    padding: 60px 15%;
+}
+
+.artstitle {
+    display: flex;
+    margin-top: 30px;
+}
+
+.artstitle-text{
+    width: 60%;
+}
+.artstitle-img {
+    width: 40%;
+}
+
+.img-auto {
+    max-width: 100%;
+    height: auto;
+}
+
+.artstitle-text {
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+    padding-right: 40px;
+    
+}
+
+.artstitle-text h1 {
+    font-size: 40px;
+    font-family: "宋体";
+    margin: 10px 0;
+}
+
+.artstitle-text h1 span {
+    color: #32A071;
+}
+
+.artstitle-text p {
+    font-size: 18px;
+    /* text-indent: 2em; */
+    font-family: "宋体";
+}
+.artstitle-img{
+    width: auto;
+    height: 100%;
+}
+.artstitle-img img{
+    width: 100%;
+    height: 100%;
+}
+.artsbox {
+    display: flex;
+}
+
+.artsbox-img {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.artsbox-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.artsbox-img::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.artsbox-text {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #fff;
+    transition: all .5s;
+}
+
+.artsbox-img:hover::before {
+    opacity: 1;
+}
+
+.artsbox-img:hover .artsbox-text {
+    top: 50%;
+}
