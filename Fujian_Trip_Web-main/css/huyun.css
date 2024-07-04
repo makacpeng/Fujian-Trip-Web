@@ -91,3 +91,17 @@
     margin-right: auto;
     text-align: justify; /* 使文本两端对齐 */
 }
+.youji-text {
+	font-family: 'Noto Serif SC', serif; 
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+}
+.youji-text div {
+	margin: 0.5em 0; 
+    width: 70ch; 
+	font-size: 1.2em; 
+    line-height: 1.6; 
+}
