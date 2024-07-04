@@ -27,7 +27,7 @@ window.addEventListener("scroll", function () {
             selectors.id.style.backgroundImage = `url(${selectors.item[timeLength - 1].querySelector(selectors.img).getAttribute("src")})`;
             selectors.item[timeLength - 1].classList.add(selectors.activeClass);
         }
-            // 如果当前滚动位置在当前项目的最小和最大高度之间
+        // 如果当前滚动位置在当前项目的最小和最大高度之间
         // 则将当前项目设置为激活状态，并设置背景图片为当前项目的图片
         else if (pos <= max - 10 && pos >= min) {
             selectors.id.style.backgroundImage = `url(${item.querySelector(selectors.img).getAttribute("src")})`;
