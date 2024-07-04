@@ -1,7 +1,8 @@
 .bg {
 	height: 450px;
-	background-image: url(../img/media-library-bg.png);
+	background-image: url(../img/media-library-bg-fj.jpg);
 	background-size: 100% 450px;
+	/* position: relative; */
 }
 
 .bg h1 {
@@ -10,6 +11,7 @@
 }
 
 .bg .button {
+	padding-top: 345px;
 	display: flex;
 	justify-content: center;
 }
@@ -57,7 +59,6 @@
 	height: 20px;
 	padding: 10px 10px;
 	border: 1px solid #b5b5b5;
-	background-color: white;
 	border-radius: 4px;
 	background-color: #fff;
 }
@@ -68,6 +69,10 @@
 	height: 100%;
 	border: none;
 	background: none;
+}
+
+.bg .search>div:first-of-type>input:hover {
+    cursor: text; /* 当鼠标悬浮在输入框上时显示文本光标 */
 }
 
 .bg .search>div:last-of-type {
@@ -88,32 +93,35 @@
 	border-radius: 4px;
 }
 
+.bg .search>div:last-of-type>button:hover {
+    cursor: pointer; /* 当鼠标悬浮在按钮上时显示指针光标 */
+}
+
 .centerbox {
 	margin: 20px 0;
 	overflow: hidden;
 }
 
-.centerbox .imglist>li {
-	float: left;
-	margin-top:20px;
-}
+/* 展品内容 */
+.sbcl{ clear:both; height:0px; overflow:hidden;}
+.container_2j{width:1200px;margin:0 auto;height:auto; padding-top:30px; padding-bottom:60px;}
+.nr_tu{ float:left; width:300px; height:auto; padding-left:35px;}
+.nr_tu img{width:100%; height:auto;}
+.nr_sm{ float:right; width:780px; padding-right:35px;}
 
-.centerbox .imglist>li:nth-child(odd) {
-	width: 32.5%;
-	height:270px;
-	background-color:red;
-}
+.nr_sm_1{font-family:"微软雅黑", "黑体"; font-size:16px; color:#757575; text-align:left; line-height:24px; padding-top:30px; padding-bottom:50px; overflow:auto;}
+.nr_smbt{font-family:"微软雅黑", "黑体"; font-size:30px; color:#000000; text-align:left; font-weight:bold;}
 
-.centerbox .imglist>li:nth-child(even) {
-	width: 1%;
-	height:5px;
-}
-.centerbox .imglist>li>a{
-	display:block;
-	height:100%;
-}
-.centerbox .imglist>li>a>img{
-	display:block;
-	width:100%;
-	height:100%;
-}
+.nr_smzw{font-family:"微软雅黑", "黑体"; font-size:16px; color:#000000; line-height:35px; text-align:center; padding-right:50px; text-align:justify;}
+.nr_sm_1 .param{ width:50%; float:left; font-size:14px;}
+
+/*展品梗概  */
+.zstuk{width:450px; margin-left:14px; margin-right:16px; margin-top:35px; float:left; text-align:center;}
+.zstu { height:300px; width:450px; vertical-align: top; display:table-cell; text-align:center;}
+.zstu img{width:auto;height:auto; max-width:450px; max-height:300px;  display:inline; vertical-align: middle;}
+
+.zstux{border-bottom:#950603 3px solid; margin-top:5px;}
+
+.zstusm{background-color:#dddddd; font-family:"微软雅黑", "黑体"; font-size:16px; color:#000000;text-align:center;width:420px;line-height:30px; padding:10px 15px;transition: background 2s;}
+.zstuk:hover .zstusm{ background:#950603; color:#fff}
+.zstuk:hover .zstusm a{ background:#950603; color:#fff}

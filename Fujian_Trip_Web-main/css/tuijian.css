@@ -1,12 +1,32 @@
 .centerbox {
-	margin-top: 40px;
+	margin-top: 10px;
 }
 
 .centerbox .title>h1 {
-	margin: 0;
 	text-align: center;
 	margin: 20px 0;
 }
+
+.no-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.no-results img {
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.no-results p {
+    font-size: 18px;
+    color: #888;
+}
+
 
 .centerbox .sceneryclass:first-of-type {
 	margin-bottom: 30px !important;
@@ -30,16 +50,9 @@
 .centerbox .scenerylist>li {
 	float: left;
 	margin-top: 1%;
-}
-
-.centerbox .scenerylist>li:nth-child(odd) {
 	width: 32.8%;
 	height: 330px;
-}
-
-.centerbox .scenerylist>li:nth-child(even) {
-	width: 0.8%;
-	height: 5px;
+	padding-right: 5px;
 }
 
 .centerbox .scenerylist>li>a {
@@ -76,4 +89,8 @@
 	background-color: #fafafa;
 	border: 1px solid #d8d8d8;
 	border-top:1px #fafafa solid;
+}
+
+.form-button img:hover {
+    cursor: pointer;
 }

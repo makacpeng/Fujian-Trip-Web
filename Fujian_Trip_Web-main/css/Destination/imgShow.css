@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: rgb(206,237,223);
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    width: 1520px;
+    height: 100%;
+
+    margin: 50px;
+
+    /*margin-top: px;*/
+    /*width: 375px;*/
+    /*height: 520px;*/
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 4px 4px 30px rgba(0,0,0,0.6);
+    overflow-y: scroll;
+
+
+}
+
+/*隐藏滚动条*/
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+/*.container form{*/
+/*    width: 60%;*/
+/*}*/
+
+
+/*搜索框CSS开始*/
+form {
+    width: 640px;
+    height: 50px;
+    background-color: #f6f7f8;
+    border: 1px solid #f1f2f3;
+    border-radius: 6px;
+    margin: 30px auto;
+    line-height: 50px;
+
+    /*overflow: hidden;*/
+}
+
+form>div {
+    float: left;
+}
+
+.form-input {
+
+    float: left;
+    width: 470px;
+    height: 48px;
+    background-color: #f6f7f8;
+    border: 0;
+    margin-left: 50px;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.form-input>input {
+    border: none;
+    outline:none; //删除点击是input的外框
+    box-shadow: none;
+    width: 100%;
+    height: 40px;
+    background: none;
+    font-size: 20px;
+
+}
+
+.form-button {
+    margin-top: 1px;
+}
+.form-button img{
+    width: 20px;
+    height: 20px;
+}
+
+/*搜索框CSS结束*/
+
+
+
+.beauty-list{
+    width: 80%;
+    margin-left: 15%;
+
+}
+
+.beauty{
+    width: 80%;
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+
+.beauty img{
+    width: 300px;
+    height: 200px;
+    object-fit:  cover;
+    border-radius: 5px;
+    margin:50px 50px 0 50px;
+}
+
+.beauty .b-details{
+    width: 600px;
+    height: 200px;
+    margin:50px 50px 0 0;
+}
+
+.beauty .b-details h2{
+    font-size: 35px;
+    color: #1d1d1d;
+    width: 100%;
+}
+
+.beauty .b-details h3{
+    font-size: 15px;
+    width: 100%;
+}
+
+

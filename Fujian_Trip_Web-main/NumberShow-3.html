@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="css/PlayFujian.css"/>
+    <link rel="stylesheet" type="text/css" href="css/NumberShow.css">
+    <link rel="stylesheet" type="text/css" href="css/NumberShow-3.css">
+    <title>Document</title>
+    <style>
+        /* CSS 样式保持不变，只添加 JavaScript 部分 */
+        body {
+            position: relative;
+            font-family: Arial, sans-serif;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('img/6666.jpg') no-repeat center center/cover; /* 使用背景图片 */
+            opacity: 1.0; /* 调整透明度，值范围是0-1，值越高表示透明度越低 */
+            z-index: -1; /* 确保背景在所有内容下面 */
+        }
+        .nav {
+            background: rgba(46, 104, 118, 0.85); /* 半透明背景 */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .nav ul li {
+            margin: 0 15px;
+        }
+        .nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        .nav ul li a:hover {
+            color: #ffa500;
+        }
+        .nav .form-input input {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+        }
+        .nav .form-button img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+        .centerbox {
+            padding: 20px;
+        }
+        .thisposition a, .thisposition span {
+            color: #2e6882;
+            font-size: 0.9em;
+        }
+        .viewcontaer {
+            background: rgba(255, 255, 255, 0.8); /* 半透明白色背景 */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .viewbox {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .viewbox-left ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .viewbox-left ul li {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: #333;
+            cursor: pointer; /* 添加指针样式 */
+        }
+        .viewbox-right .view-title h4 {
+            font-size: 1.5em;
+            color: #2e6882;
+            margin-bottom: 10px;
+        }
+        .viewbox-img {
+            width: 48%;
+        }
+        .viewbox-img img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .viewbox-img:hover img {
+            transform: scale(1.05);
+        }
+        .footer {
+            background: #2e6882;
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        .footer .logo img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .footer p, .footer span {
+            margin: 5px 0;
+        }
+        .footer img {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+  <div class="nav">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="PlayFujian.html">玩转福建</a></li>
+        <li><a href="TDstination.html">旅游目的地</a></li>
+        <li><a href="tuijian.html">风景图库</a></li>
+        <li><a href="PlayStrategy.html">游玩攻略</a></li>
+        <li><a href="Fujianlook.html">福建视界</a></li>
+        <li><a href="minshu.html">经典民宿</a></li>
+        <li><a href="NumberShow.html">数字文旅</a></li>
+      </ul>
+      <form action="#" method="post">
+        <div class="form-input"><input type="text" placeholder="请输入搜索关键词" /></div>
+        <div class="form-button"><img src="img/search-icon.png"></div>
+      </form>
+    </div>
+  </div>
+ 
+<div class="centerbox">
+  <div class="thisposition">
+    <a href="#">首页</a><span>&gt;&gt;</span><a href="#">数字文旅<span>&gt;&gt;</span>景区</a>
+  </div>
+  <div class="viewcontaer">
+    <div class="viewbox">
+        <div class="viewbox-left">
+            <ul>
+                <li>厦门鼓浪屿风景名胜区</li>
+                <li>武夷山</li>
+                <li>太姥山风景名胜区</li>
+                <li>永定土楼</li>
+                <li>白水洋-鸳鸯溪旅游区</li>
+                <li>湄洲岛风景名胜区</li>
+            </ul>
+        </div>
+        <div class="viewbox-right">
+            <div class="view-title">
+                <h4>著名景点</h4>
+            </div>
+            <div class="viewbox">
+                <div class="viewbox-img">
+                    <img src="img/view01.png" alt="" class="img-auto">
+                </div>
+                <div class="viewbox-img">
+                    <img src="img/view02.png" alt="" class="img-auto">
+                </div>
+            </div>
+            <div class="viewbox">
+              <div class="viewbox-img">
+                  <img src="img/view03.png" alt="" class="img-auto">
+              </div>
+              <div class="viewbox-img">
+                  <img src="img/view04.png" alt="" class="img-auto">
+              </div>
+          </div>
+          <div class="viewbox">
+            <div class="viewbox-img">
+                <img src="img/view05.png" alt="" class="img-auto">
+            </div>
+            <div class="viewbox-img">
+                <img src="img/view06.png" alt="" class="img-auto">
+            </div>
+        </div>
+        <div class="viewbox">
+          <div class="viewbox-img">
+              <img src="img/view07.png" alt="" class="img-auto">
+          </div>
+          <div class="viewbox-img">
+              <img src="img/view08.png" alt="" class="img-auto">
+          </div>
+      </div>
+        </div>
+    </div>
+</div>
+</div>
+
+  <div class="footer">
+    <div class="logo"><img src="img/footer-logo.png"></div>
+    <p>主办单位：福建省文化和旅游厅联系电话：0591-87672731</p>
+    <span>备案序号：闽ICP备05066403号<img src="img/pic1.gif"></span>
+  </div>
+
+  <!-- JavaScript 部分 -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 获取所有左侧栏目的 <li> 元素
+        const liElements = document.querySelectorAll('.viewbox-left ul li');
+
+        // 遍历每个 <li> 元素，为其添加点击事件处理程序
+        liElements.forEach(li => {
+            li.addEventListener('click', function() {
+                // 获取当前 <li> 元素的文本内容作为搜索关键词
+                const keyword = this.textContent.trim();
+
+                // 构建百度搜索的 URL
+                const searchUrl = `https://www.baidu.com/s?wd=${encodeURIComponent(keyword)}`;
+
+                // 在新标签页中打开百度搜索结果页面
+                window.open(searchUrl, '_blank');
+            });
+        });
+    });
+  </script>
+</body>
+</html>

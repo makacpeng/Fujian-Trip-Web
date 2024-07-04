@@ -181,6 +181,13 @@ a {
 	background: #0CAEE8;
 }
 
+.sceneryclass>li>a.selected {
+	color: white;
+	border: 1px solid #0CAEE8;
+	background: #0CAEE8;
+}
+
+
 .footer {
 	background-color: rgb(59, 59, 59);
 	padding-bottom: 1%;
