@@ -119,6 +119,7 @@
     padding-right: 15px;
 }
 
+/*激活状态的item类*/
 .item-active{
     opacity: 1;
     transform: translateY(0);
@@ -157,29 +158,3 @@
     display: inline-block;
 }
 
-@media only screen and (max-width: 767px) {
-    .item {
-        align-self: baseline !important;
-        width: 100%;
-        padding: 0 30px 150px 80px;
-    }
-
-    .item::before {
-        left: 10px !important;
-        padding: 0 !important;
-        top: 50px;
-        text-align: center !important;
-        width: 60px;
-        border: none !important;
-    }
-
-    .item:last-child {
-        padding-bottom: 40px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .routeLine::before {
-        left: 40px;
-    }
-}
