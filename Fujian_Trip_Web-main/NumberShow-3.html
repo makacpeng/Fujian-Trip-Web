@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/public.css"/>
     <link rel="stylesheet" type="text/css" href="css/PlayFujian.css"/>
-    <!-- <link rel="stylesheet" type="text/css" href="css/NumberShow.css"/> -->
     <link rel="stylesheet" type="text/css" href="css/NumberShow.css">
     <link rel="stylesheet" type="text/css" href="css/NumberShow-3.css">
     <title>Document</title>
     <style>
+        /* CSS 样式保持不变，只添加 JavaScript 部分 */
         body {
             position: relative;
             font-family: Arial, sans-serif;
@@ -90,6 +90,7 @@
             margin-bottom: 10px;
             font-size: 1.2em;
             color: #333;
+            cursor: pointer; /* 添加指针样式 */
         }
         .viewbox-right .view-title h4 {
             font-size: 1.5em;
@@ -210,5 +211,27 @@
     <p>主办单位：福建省文化和旅游厅联系电话：0591-87672731</p>
     <span>备案序号：闽ICP备05066403号<img src="img/pic1.gif"></span>
   </div>
+
+  <!-- JavaScript 部分 -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 获取所有左侧栏目的 <li> 元素
+        const liElements = document.querySelectorAll('.viewbox-left ul li');
+
+        // 遍历每个 <li> 元素，为其添加点击事件处理程序
+        liElements.forEach(li => {
+            li.addEventListener('click', function() {
+                // 获取当前 <li> 元素的文本内容作为搜索关键词
+                const keyword = this.textContent.trim();
+
+                // 构建百度搜索的 URL
+                const searchUrl = `https://www.baidu.com/s?wd=${encodeURIComponent(keyword)}`;
+
+                // 在新标签页中打开百度搜索结果页面
+                window.open(searchUrl, '_blank');
+            });
+        });
+    });
+  </script>
 </body>
 </html>
