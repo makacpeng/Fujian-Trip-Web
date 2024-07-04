@@ -58,10 +58,10 @@ body{
     width: 300px;
     position: absolute;
     left: 100px;
-    top: 50%;
+    top: 20%;
     transform: translateY(-50%);
     font-family: system-ui;
-    color: #eeeeee;
+    color: black;
     display: none;
 }
 .item:nth-child(2) .content{
