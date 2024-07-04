@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="css/PlayFujian.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="css/NumberShow.css"/> -->
+    <link rel="stylesheet" type="text/css" href="css/NumberShow.css">
+    <link rel="stylesheet" type="text/css" href="css/NumberShow-1.css">
+    <title>Document</title>
+    <style>
+        body {
+            position: relative;
+            font-family: Arial, sans-serif;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('img/3333.jpg') no-repeat center center/cover; /* 使用背景图片 */
+            opacity: 0.9; /* 调整透明度 */
+            z-index: -1; /* 确保背景在所有内容下面 */
+        }
+        .nav {
+            background: rgba(46, 104, 118, 0.85); /* 半透明背景 */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .nav ul li {
+            margin: 0 15px;
+        }
+        .nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        .nav ul li a:hover {
+            color: #ffa500;
+        }
+        .nav .form-input input {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+        }
+        .nav .form-button img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+        .centerbox {
+            padding: 20px;
+        }
+        .thisposition a, .thisposition span {
+            color: #2e6882;
+            font-size: 0.9em;
+        }
+        .list {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8); /* 半透明白色背景 */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .list li {
+            width: 30%;
+            list-style: none;
+        }
+        .list-img img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .list-img:hover img {
+            transform: scale(1.05);
+        }
+        .list-text {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .footer {
+            background: #2e6882;
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        .footer .logo img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .footer p, .footer span {
+            margin: 5px 0;
+        }
+        .footer img {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+  <div class="nav">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="PlayFujian.html">玩转福建</a></li>
+        <li><a href="TDstination.html">旅游目的地</a></li>
+        <li><a href="tuijian.html">风景图库</a></li>
+        <li><a href="PlayStrategy.html">游玩攻略</a></li>
+        <li><a href="Fujianlook.html">福建视界</a></li>
+        <li><a href="minshu.html">经典民宿</a></li>
+        <li><a href="NumberShow.html">数字文旅</a></li>
+      </ul>
+      <form action="#" method="post">
+        <div class="form-input"><input type="text" placeholder="请输入搜索关键词" /></div>
+        <div class="form-button"><img src="img/search-icon.png"></div>
+      </form>
+    </div>
+  </div>
+ 
+
+
+<div class="centerbox">
+  <div class="thisposition">
+    <a href="#">首页</a><span>&gt;&gt;</span><a href="#">数字文旅<span>&gt;&gt;</span>博物馆</a>
+  </div>
+  <ul class="list">
+    <li>
+      <div class="list-img">
+        <img src="img/fj11.jpg" alt="" class="img-auto">
+      </div>
+      <div class="list-text">
+        宋词里的福建
+      </div>
+    </li>
+    <li>
+      <div class="list-img">
+        <img src="img/fj22.jpg" alt="" class="img-auto">
+      </div>
+      <div class="list-text">
+        宋词里的福建
+      </div>
+    </li>
+    <li>
+      <div class="list-img">
+        <img src="img/fj44.jpg" alt="" class="img-auto">
+      </div>
+      <div class="list-text">
+        宋词里的福建
+      </div>
+    </li>
+  </ul>
+  <ul class="list">
+    <li>
+      <div class="list-img">
+        <img src="img/fj44.jpg" alt="" class="img-auto">
+      </div>
+      <div class="list-text">
+        宋词里的福建
+      </div>
+    </li>
+    <li>
+      <div class="list-img">
+        <img src="img/fj55.jpg" alt="" class="img-auto">
+      </div>
+      <div class="list-text">
+        宋词里的福建
+      </div>
+    </li>
+    <li>
+      <div class="list-img">
+        <img src="img/fj66.jpg" alt="" class="img-auto">
+      </div>
+      <div class="list-text">
+        宋词里的福建
+      </div>
+    </li>
+  </ul>
+  <ul class="list">
+    <li>
+      <div class="list-img">
+        <img src="img/museum01.jpg" alt="" class="img-auto">
+      </div>
+      <div class="list-text">
+        宋词里的福建
+      </div>
+    </li>
+    <li>
+      <div class="list-img">
+        <img src="img/museum02.jpg" alt="" class="img-auto">
+      </div>
+      <div class="list-text">
+        宋词里的福建
+      </div>
+    </li>
+    <li>
+      <div class="list-img">
+        <img src="img/museum03.jpg" alt="" class="img-auto">
+      </div>
+      <div class="list-text">
+        宋词里的福建
+      </div>
+    </li>
+  </ul>
+</div>
+
+  <div class="footer">
+    <div class="logo"><img src="img/footer-logo.png"></div>
+    <p>主办单位：福建省文化和旅游厅联系电话：0591-87672731</p>
+    <span>备案序号：闽ICP备05066403号<img src="img/pic1.gif"></span>
+  </div>
+</body>
+</html>
