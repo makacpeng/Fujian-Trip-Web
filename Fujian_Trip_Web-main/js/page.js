@@ -3,57 +3,57 @@
  page是显示的总页数 向上取整(一个也会占一页)
  pagerCount为要显示的数字按钮的个数 */
 const scenery = [
-	{ imgSrc: 'img/f1.png', title: '厦门鼓浪屿',
+	{ imgSrc: 'img/f1.png', title: '厦门鼓浪屿',href:'tuijian2.html',
 		region: "厦门", description: '素有“海上花园”之誉，岛上气候宜人，无车马喧， 处处鸟语花香' },
-	{ imgSrc: 'img/f2.png', title: '武夷山',
+	{ imgSrc: 'img/f2.png', title: '武夷山', href:'tuijian1.html',
 		region: "福州", description: '中国著名的风景旅游区和避暑胜地，素有“碧水丹山”“奇秀甲东南”之美誉' },
-	{ imgSrc: 'img/f3.png', title: '太姥山',
+	{ imgSrc: 'img/f3.png', title: '太姥山',href:'',
 		region: "宁德", description: '世界地质公园、 国家级风景名胜区、 国家自然遗产，有“海上仙都”之称' },
-	{ imgSrc: 'img/f4.png', title: '永定土楼',
+	{ imgSrc: 'img/f4.png', title: '永定土楼',href:'tuijian3.html',
 		region: "龙岩", description: '素有“土楼之王”“国之瑰宝”之美誉，规模宏大、设计科学、 布局合理' },
-	{ imgSrc: 'img/f5.png', title: '白水洋',
+	{ imgSrc: 'img/f5.png', title: '白水洋',href:'',
 		region: "宁德", description: '融溪、峰、岩、瀑、洞、湖等景观为一体，群峰竞秀、百瀑争流、万木葱茏' },
-	{ imgSrc: 'img/f6.png', title: '湄洲岛',
+	{ imgSrc: 'img/f6.png', title: '湄洲岛',href:'',
 		region: "莆田", description: '由妈祖祖庙、祖庙山、湄屿潮音、牛头尾沙滩等重要自然景观和人文景观组成' },
-	{ imgSrc: 'img/f7.png', title: '冠豸山',
+	{ imgSrc: 'img/f7.png', title: '冠豸山',href:'',
 		region: "龙岩", description: '平地拔起，外直中虚、山清水秀，与武夷山并称为“北夷南豸山，丹霞双绝' },
-	{ imgSrc: 'img/f8.png', title: '泰宁风景名胜区',
+	{ imgSrc: 'img/f8.png', title: '泰宁风景名胜区',href:'',
 		region: "三明", description: '以水上丹霞、峡谷群落、洞穴奇观、原始生态为主要景观特点' },
-	{ imgSrc: 'img/f9.png', title: '古田旅游区',
+	{ imgSrc: 'img/f9.png', title: '古田旅游区',href:'',
 		region: "龙岩", description: '古田民俗文化异彩纷呈，红军戏台、星火燎原蜡像馆、客家乡村' },
-	{ imgSrc: 'img/f10.png', title: '泰宁大金湖',
+	{ imgSrc: 'img/f10.png', title: '泰宁大金湖',href:'',
 		region: "三明", description: '具有幽、秀、奇、绝的独特风格和山青、水秀、石美、洞奇、峰怪特点' },
-	{ imgSrc: 'img/f11.png', title: '清源山',
+	{ imgSrc: 'img/f11.png', title: '清源山',href:'',
 		region: "泉州", description: '泉州最值得爬的山，老子的雕塑，雕刻的栩栩如生，且有千的历史' },
-	{ imgSrc: 'img/f12.png', title: '海坛岛',
+	{ imgSrc: 'img/f12.png', title: '海坛岛',href:'',
 		region: "福州", description: '东海仙境、石牌洋、海坛天神、南寨石林、三十六脚湖、仙人井' },
-	{ imgSrc: 'img/f13.png', title: '三坊七巷',
+	{ imgSrc: 'img/f13.png', title: '三坊七巷',href:'',
 		region: "福州", description: '白墙黛瓦的建筑，幽静古朴的街巷，感受岁月沧桑' },
-	{ imgSrc: 'img/f14.png', title: '平潭岛',
+	{ imgSrc: 'img/f14.png', title: '平潭岛',href:'',
 		region: "福州", description: '平潭岛，是中国最美海岛，海水湛蓝，海风微醺' },
-	{ imgSrc: 'img/f15.png', title: '福州国家森林公园',
+	{ imgSrc: 'img/f15.png', title: '福州国家森林公园',href:'',
 		region: "福州", description: '绝美的森林自然风光，植被繁茂苍翠，空气清新' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
 
 	],
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				const li = document.createElement("li");
 				// li元素添加内容
 				li.innerHTML = `
-					<a href="#">
+					<a href="${item.href}">
 						<img src="${item.imgSrc}" alt="${item.title}">
 						<div>
 							<h3>${item.title}</h3>
@@ -175,7 +175,7 @@ const showContent = () => {
 		const li = document.createElement("li");
 		// li元素添加内容
 		li.innerHTML = `
-			<a href="#">
+			<a href="${item.href}">
 				<img src="${item.imgSrc}" alt="${item.title}">
 				<div>
 					<h3>${item.title}</h3>
