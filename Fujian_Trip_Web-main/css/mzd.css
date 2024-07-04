@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+.auto{
+	width: 1000px;
+	margin: 0 auto;
+}
+.clearfix::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.header{
+	height: 80px;
+	box-sizing: border-box;
+	border-bottom: 2px solid aquamarine;
+	margin-bottom: 8px;
+}
+.header>div:first-child{
+	width: 285px;
+	height: 78px;
+	float: left;
+}
+.header>div:first-child img{
+	width: 285px;
+	height: 78px;
+}
+.header>div:last-child{
+	width: 400px;
+	height: 78px;
+	float: right;
+}
+.header>div:last-child span{
+	cursor: pointer;
+	line-height: 50px;
+}
+.header>div:last-child span~span{
+	margin-left: 20px;
+}
+.banner{
+	height: 440px;
+}
+.banner img{
+	width: 100%;
+	height: 440px;
+}
+.main2{
+	height: 318px;
+	box-sizing: border-box;
+	border-bottom: 2px solid aquamarine;
+}
+.main2>div:first-child{
+	width: 600px;
+	float: left;
+}
+.main2>div:last-child{
+	width: 258px;
+	height: 300px;
+	float: right;
+}
+.main2>div:last-child img{
+	width: 258px;
+	height: 300px;
+}
+.main3>div{
+	margin-top: 8px;
+	border-bottom: 1px solid #ccc;
+}
+.main3>div>div:first-child{
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	float: left;
+}
+.main3>div>div:first-child img{
+	width: 65px;
+	height: 65px;
+}
+.main3>div>div:last-child{
+	width: 900px;
+	height: 80px;
+	float: right;
+}
+.footer{
+	text-align: center;
+}
+.footer p{
+	line-height: 40px;
+}
+.ct {
+	width: 50%; /* 固定宽度 */
+	margin: 0 auto; /* 上下margin为0，左右margin自动 */
+	background-color: lightblue; /* 仅为可视化效果 */
+  }

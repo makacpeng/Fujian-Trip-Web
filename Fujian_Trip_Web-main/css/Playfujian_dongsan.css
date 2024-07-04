@@ -1,0 +1,95 @@
+*{
+    margin: 0;  /*去掉默认内外边距*/
+    padding: 0; 
+}
+body{
+    font-size: 16px;/*16像素值*/
+}
+li{
+    list-style: none;
+}
+.logo{
+    width: 100%;  /*长度*/
+    text-align:center;/*居中*/
+    margin: 20px 0 50px 0;/*边距*/
+}
+.logo h4{
+    cursor: pointer;/*鼠标触手*/
+    font-size: 30px;/*像素值*/
+    letter-spacing: 2px; /*字符间距*/
+    margin-top: 20px;/*上边距*/
+    margin-bottom: 5px;
+}
+.logo h4:hover{     /*鼠标移动到h4标签变色*/
+    color: #18da32;
+}
+.nav{
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+.nav>ul{
+    display: flex;
+    justify-content: center;/*居中*/
+    padding: 20px 0;
+}
+.nav>ul>li{
+    position: relative;
+    margin: 0 20px;
+}
+.nav ul li a{
+    color: #ce8460;
+    text-decoration: none;/*下划线设无*/
+}
+.nav ul li a:hover{
+    color: #ce8460;
+}
+.nav ul li ul{
+   display: none;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    background: #f2f2f2;
+    padding: 10px;
+    width: 80px;
+    list-style-type: none;/*   */
+}
+.nav ul li li{
+    margin: 5px 0;
+}
+.nav>ul>li:hover ul{
+   display: block;
+}
+.banner{
+    width: 820px;
+    margin: 20px auto;
+}
+.banner img{
+    width: 100%;
+}
+.ab{
+    width: 820px;
+    margin: auto;
+}
+.ab h3{
+    display: flex;
+    color: #ce8460;
+    align-items: center; /*弹性居中*/
+    font-size: 24px;/*大小*/
+}
+.ab h3::before{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 30px;
+    margin-right: 10px;
+    background: #ce8460;
+}
+.ab p{
+    line-height: 1.8;
+    margin: 20px 0; /*上下边距*/
+    text-indent: 2em;/*首行缩进*/
+}
+.video{
+    margin: 20px 0;
+}

@@ -1,0 +1,51 @@
+.c li{
+    list-style: none;
+    float: left;
+    width: 33.3%;
+}
+li img{
+    width: 100%;
+}
+.a h1{
+    text-align:center;/*居中*/
+}
+.a p{
+    text-indent: 2em;/*首行缩进*/
+}
+.a{
+    width: 820px;
+    margin: auto;
+}
+.a h2{
+    display: flex;
+    color: #ce8460;
+    align-items: center; /*弹性居中*/
+    font-size: 24px;/*大小*/
+}
+.a h2::before{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 30px;
+    margin-right: 10px;
+    background: #ce8460;
+}
+.b h2{
+    display: flex;
+    color: #ce8460;
+    align-items: center; /*弹性居中*/
+    font-size: 24px;/*大小*/
+}
+.b h2::before{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 30px;
+    margin-right: 10px;
+    background: #ce8460;
+}
+.a p{
+    line-height: 1.8;
+    margin: 20px 0; /*上下边距*/
+    text-indent: 2em;/*首行缩进*/
+}
