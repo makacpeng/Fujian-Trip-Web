@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>武夷山旅游介绍</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/tuijian.css"/>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        .hero-section {
+            background: url('img/wuyisan.png') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            position: relative;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-section h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            animation: fadeInDown 2s;
+        }
+        .hero-section p {
+            font-size: 1.5em;
+            animation: fadeInUp 2s;
+        }
+        .content-section {
+            padding: 60px 20px;
+        }
+        .content-section h2 {
+            margin-bottom: 30px;
+            color: #007bff;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        .content-section p {
+            font-size: 1.2em;
+            line-height: 1.8em;
+            margin-bottom: 30px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .footer a:hover {
+            color: #0056b3;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #007bff;
+        }
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5em;
+            }
+            .hero-section p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="PlayFujian.html">玩转福建</a></li>
+                <li><a href="Destination/Destination.html">旅游目的地</a></li>
+                <li><a href="tuijian.html">风景图库</a></li>
+                <li><a href="Play_guide/PlayStrategy.html">游玩攻略</a></li>
+                <li><a href="zhejianglook.html">闽里视界</a></li>
+                <li><a href="minshu.html">经典民宿</a></li>
+                <li><a href="NumberShow.html">数字文旅</a></li>
+            </ul>
+            <form action="#" method="post">
+                <div class="form-input"><input type="text" placeholder="请输入搜索关键词" /></div>
+                <div class="form-button"><img src="img/search-icon.png" alt=""></div>
+            </form>
+        </div>
+    </div>
+    <div class="hero-section">
+        <h1 class="animate__animated animate__fadeInDown">武夷山</h1>
+        <p class="animate__animated animate__fadeInUp">碧水丹山，奇秀甲东南</p>
+    </div>
+
+    <div class="container content-section">
+        <h2 class="animate__animated animate__fadeInUp">关于武夷山</h2>
+        <p class="animate__animated animate__fadeInUp">武夷山位于中国福建省西北部，是中国著名的风景旅游区和避暑胜地。武夷山以其秀丽的自然风光和丰富的文化底蕴而闻名，素有“碧水丹山”“奇秀甲东南”之美誉。武夷山不仅拥有奇特的山水景观，还有着悠久的历史和文化，是中国著名的文化和自然双重遗产地。</p>
+        <p class="animate__animated animate__fadeInUp">武夷山的主要景点包括九曲溪、天游峰、一线天、大红袍茶园等。游客可以在这里体验竹筏漂流、徒步登山、探访古迹等多种活动，感受大自然的美妙与人文的深厚。</p>
+
+        <h2 class="animate__animated animate__fadeInUp">美丽景色</h2>
+        <div class="gallery">
+            <img src="img/wuyishan1.png" alt="" class="animate__animated animate__zoomIn">
+            <img src="img/wuyishan2.png" alt="" class="animate__animated animate__zoomIn">
+            <img src="img/wuyishan3.png" alt="" class="animate__animated animate__zoomIn">
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 武夷山旅游 | <a href="#">隐私政策</a> | <a href="#">联系我们</a></p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-weixin"></i></a>
+            <a href="#"><i class="fab fa-weibo"></i></a>
+            <a href="#"><i class="fab fa-qq"></i></a>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

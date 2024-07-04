@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../../../img/play_guide/lunbotu/lunbotu_background.jpg);
+            perspective: 1000px;
+        }
+        #s_img{
+            width: 500px;
+            height: 700px;
+            transform-style: preserve-3d;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgb(0, 0, 0);
+            backface-visibility: hidden;
+            transition: 2s;
+        }
+        #a2{
+            transform: rotateY(180deg);
+        }
+        body:hover #a2{
+            transform: rotateY(0deg);
+        }
+        body:hover #a1{
+            transform: rotateY(-180deg);
+        }
+    </style>
+</head>
+<body>
+<div id="s_img">
+    <img src="../../../img/play_guide/travel_map/sanming.jpg" id="a2" alt="Back" onclick="location='../city_gonglv/non_finish_gonglv.html'">
+    <img src="../../../img/play_guide/Fujian-citys/sanming.png" id="a1">
+</div>
+</body>
+</html>
