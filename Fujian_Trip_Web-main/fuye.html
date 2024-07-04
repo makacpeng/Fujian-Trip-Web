@@ -1,48 +1,198 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="fonts/iconfont.css"  rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/Orders.css" rel="stylesheet" type="text/css" />
+<link href="css/show.css" rel="stylesheet" type="text/css" />
+<link href="css/purebox-metro.css" rel="stylesheet" id="skin">
+
+<meta charset="utf-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/public.css" />
 		<link rel="stylesheet" type="text/css" href="css/tuijian.css"/>
-		<link rel="stylesheet" type="text/css" href="css/fuye.css"/>
-	</head>
-	<body>
-		<div class="nav">
-			<div class="container">
+
+
+</head>
+
+
+<style>
+	/* 基本样式 */
+	body {
+	  font-family: Arial, sans-serif;
+	  line-height: 1.6;
+	  margin: 0;
+	  padding: 0;
+	  background-color: #f0f0f0;
+	}
+	.container {
+	  width: 80%;
+	  margin: 5px auto;
+	  background-color: #fff;
+	  padding: 20px;
+	  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	}
+	h1, p, .price {
+	  text-align: center;
+	}
+	.product-img {
+	  text-align: center;
+	  margin-bottom: 20px;
+	}
+	.product-img img {
+	  max-width: 100%;
+	  height: auto;
+	}
+  </style>
+
+
+
+<body>
+	<div class="nav">
+		<div class="container">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="PlayZhejiang.html">玩转福建</a></li>
+				<li><a href="Destination.html">旅游目的地</a></li>
+				<li><a href="tuijian.html">风景图库</a></li>
+				<li><a href="PlayStrategy.html">游玩攻略</a></li>
+				<li><a href="zhejianglook.html">福建视界</a></li>
+				<li><a href="minshu.html">经典民宿</a></li>
+				<li><a href="NumberShow.html">数字文旅</a></li>
+			</ul>
+			<form action="#" method="post">
+				<div class="form-input"><input type="text" placeholder="请输入搜索关键词" /></div>
+				<div class="form-button"><img src="img/search-icon.png"></div>
+			</form>
+		</div>
+	</div>
+
+		 
+
+ <!--团购详细样式-->
+ <div class="Inside_pages">
+<div class="Location_link">
+  
+  <div class="clearfix detail_main " id="goodsInfo">
+   <!--图片展示样式-->
+  <div class=" left">
+  <div class="picFocus">
+			<div class="bd">
 				<ul>
-					<li><a href="index.html">首页</a></li>
-
-					<li><a href="PlayZhejiang.html">玩转福建</a></li>
-					<li><a href="Destination.html">旅游目的地</a></li>
-
-					<li><a href="tuijian.html">风景图库</a></li>
-					<li><a href="PlayStrategy.html">游玩攻略</a></li>
-					<li><a href="zhejianglook.html">福里视界</a></li>
-					<li><a href="minshu.html">经典民宿</a></li>
-					<li><a href="NumberShow.html">数字文旅</a></li>
+					<li><a target="_blank" href="#"><img src="img/min.jpg" /></a></li>
+					
 				</ul>
-				<form action="#" method="post">
-					<div class="form-input"><input type="text" placeholder="请输入搜索关键词" /></div>
-					<div class="form-button"><img src="img/search-icon.png"></div>
-				</form>
 			</div>
+			
 		</div>
-		<div class="centerbox">
-			<div class="container">
-				<div class="thisposition">
-					<a href="#">首页</a><span>&gt;&gt;</span><a href="#">经典民宿</a><span>&gt;&gt;</span><a href="#">山舍</a>
-				</div>
-				<h1>山舍</h1>
-				<div class="text">
-					<img src="img/min1.jpg" >
-				</div>
-			</div>
-		</div>
-		<div class="footer">
-			<div class="logo"><img src="img/footer-logo.png"></div>
-			<p>主办单位：福建省文化和旅游厅联系电话：0571-96118</p>
-			<span>备案序号：闽ICP备05066403号<img src="img/pic1.gif"></span>
-		</div>
-	</body>
+		
+  </div>
+  <div class="left main_box">
+  <h2 class="title">石栖山墅（集美大学城店）2020年开业|有影音房|停车场|休闲度假</h2>
+  <h3>城光路166-102号（近嘉庚体育馆、嘉庚公园）</h3>
+
+  <h3>距离您步行一公里，大约十二分钟</h3>
+  <h3>距离集美学村地铁站-出口驾车2公里，大约七分钟</h3>
+   <div class="time">
+   <div class="icon_time"></div></div>    
+   <div class="Numbers">预定天数
+		  <a href="javascript:void(0);" onclick="updatenum('del');">-</a>
+		  <input id="number" name="number" type="text" value="1" class="number_text">
+		  <a href="javascript:void(0);" onclick="updatenum('del');">+</a> 
+		  <span>假期优惠中</span>
+		 </div>
+  <div class="status_banner">
+   <div class="currentPrice"> <small>¥</small>138.00 </div>
+     <div class="left"><del class="originPrice">¥596.00</del></div>
+	  <div><button type="submit" class="buyaction J_BuySubmit"><span>马上抢</span></button></div>		
+     </div>
+     <div class="numOfPeople"><span class="num">779</span>件已售</div>	
+   </div>
+  
+  <!--样式-->
+  
+   <div class="right_style">
+   		<div class="inDetail_boxOut ">
+	 <div class="inDetail_box">
+	  <div class="fixed_out ">
+	   
+               <div class="subbuy">
+         
+         
+	  </div>
+	 </div>	  
+	</div>
+ 
+    <ul class="shangpsx_info">
+        <li><label>设施服务</label><span>有收费停车场</span></li>
+        <li><label>车位</label><span>无充电车位</span></li>
+        <li><label>网络</label><span>公用区WIFI免费</span></li>
+        <li><label>前台服务</label><span>外卖接受、行李寄存、叫车服务</span></li>
+        <li><label>餐饮服务</label><span>餐厅、咖啡厅、送餐服务</span></li>
+        <li><label>通用设施</label><span>吸烟区、电梯、空调、公共音响系统</span></li>
+        <li><label>商务服务</label><span>传真、复印免费</span></li>
+        <li><label>其他服务</label><span>干洗、洗涤用具</span></li>
+        <li><label>公共区</label><span>花园</span></li>
+        <li><label>儿童设施</label><span>儿童玩具、儿童牙刷、儿童书籍</span></li>
+        <li><label>清洁服务</label><span>洗衣房、毛巾更换</span></li>
+        <li><label>娱乐活动设施</label><span>徒步旅行、茶室</span></li>
+       </ul>
+   </div>
+   
+    
+
+   </div>
+  </div>
+ </div>
+
+
+ 
+ <div class="container">
+
+    <h1>石栖山墅</h1>
+    <p>欢迎来到我们的民宿，一个融合了现代舒适与地方风情的理想居所。</p>
+    <p>无论是放松身心，还是探索周边自然美景，石栖山墅都是您理想的选择。预订您的住宿，享受一段舒适愉快的假期</p>
+	<br>
+	<div class="product-img">
+		<img src="image_minsu/54ecf73c6dade0ed6d0a2ec26844e5b.jpg" alt="Product Image">
+		<br>
+		<br>
+		<p>优美的自然环境，靠近山脚和森林。</p>
+		<p>精心设计的客房，每间房间都有独特的风格和舒适的床铺。</p>
+		<br>
+		<br>
+		<img src="image_minsu/f953b639247a9b4b60168fde40f559e.jpg" alt="Product Image">
+		<br>
+		<br>
+		<p>设施完备的私人浴室，配有现代化的淋浴设施。</p>
+		<p>宽敞的共用休息区，提供茶水和阅读角落。</p>
+		<br>
+		<br>
+		<img src="image_minsu/2ac7d3faaa2bedc57094315ab52c56a.jpg" alt="Product Image">
+		<br>
+		<br>
+		<p>免费高速无线网络覆盖全区。</p>
+		<p>每日早餐服务，品尝新鲜制作的美味食物。</p>
+		<img src="image_minsu/cbbc0f1afc139fa0f7fb303b17da337.jpg" alt="">
+		<br>
+		<br>
+		<p>友好的工作人员，随时为您提供帮助和建议。</p>
+		<p>便捷的停车场，方便客人自驾前来。</p>
+	  </div>
+	 
+	
+		
+		
+		
+	 
+  </div>
+
+</div>
+
+
+</body>
 </html>
+
+
