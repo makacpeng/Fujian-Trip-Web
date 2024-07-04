@@ -11,6 +11,21 @@ body{
     align-items: center;
     /* 径向渐变背景 */
     background: radial-gradient(circle at top center, #d3caca,#ceeddfff);
+    /*background-image: url("../../img/Destination/banner.png");*/
+    /*background-size: cover;*/
+}
+audio{
+
+}
+.logo{
+    position: fixed;
+    top: 10px; /* 距离顶部的距离 */
+    left: 10px; /* 距离右侧的距离 */
+    height: 60px;
+    border-radius: 15px;
+}
+.fa fa-sun-o{
+
 }
 .container{
     /* 弹性布局 默认水平排列 */
@@ -57,12 +72,16 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background-image: url("../../img/Destination/JMU_logo2.png");
+    background-size: cover;
+
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 16px;
 }
+
 .item:nth-child(1) .fa{
     color: #fc6e51;
 }
