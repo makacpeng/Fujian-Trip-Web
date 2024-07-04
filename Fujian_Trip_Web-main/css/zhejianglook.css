@@ -1,7 +1,8 @@
 .bg {
 	height: 450px;
-	background-image: url(../img/media-library-bg.png);
+	background-image: url(../img/media-library-bg-fj.jpg);
 	background-size: 100% 450px;
+	position: relative;
 }
 
 .bg h1 {
@@ -10,6 +11,7 @@
 }
 
 .bg .button {
+	padding-top: 345px;
 	display: flex;
 	justify-content: center;
 }
@@ -108,7 +110,7 @@
 .centerbox .imglist>li:nth-child(odd) {
 	width: 32.5%;
 	height:270px;
-	background-color:red;
+	background-color:white;
 }
 
 .centerbox .imglist>li:nth-child(even) {
