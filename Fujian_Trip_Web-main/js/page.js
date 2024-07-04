@@ -61,9 +61,11 @@ const scenery = [
 	page = Math.ceil(scenery.length / size), //向上取整进行显示
 	pagerCount = 7;
 
-// 当前选中的页数
-let current = 1;
-let currentRegion = "所有";
+
+let current = 1;// 当前选中的页数
+let currentRegion = "所有";// 当前筛选
+
+
 document.querySelectorAll('.sceneryclass li').forEach(item => {
 	item.addEventListener('click', function() {
 		currentRegion = this.querySelector('a').textContent;
@@ -76,10 +78,79 @@ document.querySelectorAll('.sceneryclass li').forEach(item => {
 	});
 });
 
+// 等待文档加载完成后执行
+document.addEventListener("DOMContentLoaded", function() {
+	// 获取搜索按钮和输入框
+	const searchButton = document.querySelector(".form-button img");
+	const searchInput = document.querySelector(".form-input input");
+
+	// 为搜索按钮添加点击事件处理函数
+	searchButton.addEventListener("click", function (event) {
+		event.preventDefault(); // 阻止默认的表单提交行为
+		performSearch();
+	});
+
+	// 为搜索输入框添加键盘按键事件处理函数
+	searchInput.addEventListener("keypress", function (event) {
+		if (event.key === "Enter") { // 检查是否按下回车键
+			event.preventDefault(); // 阻止默认的表单提交行为
+			performSearch();
+		}
+	});
+
+	// 搜索功能
+	function performSearch() {
+		const query = searchInput.value.trim(); // 获取输入框的值并去除空格
+
+		if (query) {
+			current = 1; // 重置当前页数为1
+			currentRegion = "所有"; // 重置当前筛选为“所有”
+			_pagination.style.display = 'none';
+			document.querySelectorAll('.sceneryclass li a').forEach(li => {
+				li.classList.remove('selected');
+			});
+			filteredSearch =
+				scenery.filter(item => item.title.toLowerCase().includes(query)); // 筛选标题包含搜索词的项目
+			// 每次遍历新内容首先清空
+			_content.innerHTML = "";
+			const totalItems = filteredSearch.length;
+			const totalPages = Math.ceil(totalItems / size);
+			if (totalItems === 0) {
+				// 如果筛选结果为空，显示无结果矢量图
+				const noResults = document.createElement("div");
+				noResults.className = "no-results";
+				noResults.innerHTML = `<img src="img/f0.png" alt="无结果" style="max-width: 100%; height: auto;">`;
+				_content.appendChild(noResults);
+				return totalPages;
+			}
+			// 遍历计算方法 当前为第1页 一页6个 第一页的数据就是 0 - 6(不包含) 第二页为  6- 12(不包含) 以此类推
+			filteredSearch.slice((current - 1) * size, current * size).forEach(item => {
+				// 每遍历一个创建一个li元素
+				const li = document.createElement("li");
+				// li元素添加内容
+				li.innerHTML = `
+					<a href="#">
+						<img src="${item.imgSrc}" alt="${item.title}">
+						<div>
+							<h3>${item.title}</h3>
+							<p>${item.description}</p>
+						</div>
+					</a>`;
+				// 添加到列表元素中
+				_content.appendChild(li);
+			});
+		} else {
+			alert("请输入搜索关键词");
+		}
+	}
+})
+
+
 // 显示内容列表
 const _content = document.querySelector(".scenerylist");
 const showContent = () => {
 	// 每次遍历新内容首先清空
+	_pagination.style.display = 'flex';
 	_content.innerHTML = "";
 	let filteredScenery = scenery;
 	if (currentRegion !== "所有") {
@@ -121,6 +192,7 @@ const showContent = () => {
 // 创建分页列表
 const _pagination = document.querySelector(".pagination");
 const createPagination = () => {
+
 	const totalPages = showContent();
 
 	// 刚开始就要有左按钮
