@@ -168,7 +168,6 @@ const showContent = () => {
 		return totalPages;
 	}
 
-
 	// 遍历计算方法 当前为第1页 一页6个 第一页的数据就是 0 - 6(不包含) 第二页为  6- 12(不包含) 以此类推
 	filteredScenery.slice((current - 1) * size, current * size).forEach(item => {
 		// 每遍历一个创建一个li元素
