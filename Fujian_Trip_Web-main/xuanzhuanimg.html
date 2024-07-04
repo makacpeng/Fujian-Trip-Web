@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-image: url(img/play_guide/lunbotu/lunbotu_background.jpg);
+            display: flex;
+            justify-content: center;
+            perspective: 1500px;
+        }
+        #pic{
+            margin-top: 300px;
+            display: flex;
+            width: 350px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: action 30s linear infinite;
+        }
+        #pic:hover{
+            cursor: pointer;
+            animation-play-state: paused;
+        }
+        @keyframes action {
+            from{
+                transform: rotateY(0deg);
+            }to{
+                transform: rotateY(360deg);
+                         }
+
+        }
+        #pic img{
+            top: 5%;
+            position: absolute;
+            width: 450px;
+            height: 300px;
+            -webkit-box-reflect: below 15px -webkit-linear-gradient(transparent 10%, rgba(255,255,2550,3));
+
+        }
+        #pic img:nth-child(1){
+            transform: translateZ(650px);
+        }
+        #pic img:nth-child(2){
+            transform: rotateY(40deg) translateZ(650px);
+        }
+        #pic img:nth-child(3){
+            transform: rotateY(80deg) translateZ(650px);
+        }
+        #pic img:nth-child(4){
+            transform: rotateY(120deg) translateZ(650px);
+        }
+        #pic img:nth-child(5){
+            transform: rotateY(160deg) translateZ(650px);
+        }
+        #pic img:nth-child(6){
+            transform: rotateY(200deg) translateZ(650px);
+        }
+        #pic img:nth-child(7){
+            transform: rotateY(240deg) translateZ(650px);
+        }
+        #pic img:nth-child(8){
+            transform: rotateY(280deg) translateZ(650px);
+        }
+        #pic img:nth-child(9){
+            transform: rotateY(320deg) translateZ(650px);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="pic">
+            <img src="img/play_guide/travel_map/fuzhou.jpg">
+            <img src="img/play_guide/travel_map/xiamen‘.jpg">
+            <img src="img/play_guide/travel_map/zhangzhou.jpg">
+            <img src="img/play_guide/travel_map/quanzhou.jpg">
+            <img src="img/play_guide/travel_map/sanming.jpg">
+            <img src="img/play_guide/travel_map/longyan.jpg">
+            <img src="img/play_guide/travel_map/putian.jpg">
+            <img src="img/play_guide/travel_map/nanping.jpg">
+            <img src="img/play_guide/travel_map/ningde.jpg">
+        </a>
+    </div>
+</body>
+</html>

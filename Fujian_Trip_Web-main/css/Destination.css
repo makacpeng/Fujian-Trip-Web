@@ -5,11 +5,11 @@
 .centerBox .changeImg {
 	display: flex;
 	justify-content: space-between;
-	margin: 20px 0;
-	margin-bottom: 40px;
+	margin: 20px 0 40px;
 }
 
 .centerBox .changeImg>li {}
+
 
 .centerBox .introduce {
 	overflow: hidden;
@@ -270,4 +270,16 @@
 }
 .centerBox .jingdian>.text:nth-of-type(odd)>.dingwei>h3,.centerBox .jingdian>.text:nth-of-type(odd)>.dingwei>p{
 	text-align:right;
+}
+
+.changeImg p{
+	color: #ceeddfff;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 1;
+	width: 110px;
+	height: 110px;
+	font-weight: bold;
+	font-size: 110px;
 }
