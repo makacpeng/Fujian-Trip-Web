@@ -85,12 +85,12 @@
 	color: white;
 	font-weight: bold;
 	font-size: 20px;
-	background-image: url(../img/lygl-title-bg.png);
+	background-image: url(../../img/lygl-title-bg.png);
 	background-size: 178px 40px;
 }
 
 .centerBox .label>div:last-child {
-	background-image: url(../img/lygl-more-bg.png);
+	background-image: url(../../img/lygl-more-bg.png);
 	width: 65px;
 	height: 28px;
 }

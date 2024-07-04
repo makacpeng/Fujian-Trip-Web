@@ -3,57 +3,57 @@
  page是显示的总页数 向上取整(一个也会占一页)
  pagerCount为要显示的数字按钮的个数 */
 const scenery = [
-	{ imgSrc: 'img/f1.png', title: '厦门鼓浪屿',
+	{ imgSrc: 'img/f1.png', title: '厦门鼓浪屿',href:'tuijian2.html',
 		region: "厦门", description: '素有“海上花园”之誉，岛上气候宜人，无车马喧， 处处鸟语花香' },
-	{ imgSrc: 'img/f2.png', title: '武夷山',
+	{ imgSrc: 'img/f2.png', title: '武夷山', href:'tuijian1.html',
 		region: "福州", description: '中国著名的风景旅游区和避暑胜地，素有“碧水丹山”“奇秀甲东南”之美誉' },
-	{ imgSrc: 'img/f3.png', title: '太姥山',
+	{ imgSrc: 'img/f3.png', title: '太姥山',href:'',
 		region: "宁德", description: '世界地质公园、 国家级风景名胜区、 国家自然遗产，有“海上仙都”之称' },
-	{ imgSrc: 'img/f4.png', title: '永定土楼',
+	{ imgSrc: 'img/f4.png', title: '永定土楼',href:'tuijian3.html',
 		region: "龙岩", description: '素有“土楼之王”“国之瑰宝”之美誉，规模宏大、设计科学、 布局合理' },
-	{ imgSrc: 'img/f5.png', title: '白水洋',
+	{ imgSrc: 'img/f5.png', title: '白水洋',href:'',
 		region: "宁德", description: '融溪、峰、岩、瀑、洞、湖等景观为一体，群峰竞秀、百瀑争流、万木葱茏' },
-	{ imgSrc: 'img/f6.png', title: '湄洲岛',
+	{ imgSrc: 'img/f6.png', title: '湄洲岛',href:'',
 		region: "莆田", description: '由妈祖祖庙、祖庙山、湄屿潮音、牛头尾沙滩等重要自然景观和人文景观组成' },
-	{ imgSrc: 'img/f7.png', title: '冠豸山',
+	{ imgSrc: 'img/f7.png', title: '冠豸山',href:'',
 		region: "龙岩", description: '平地拔起，外直中虚、山清水秀，与武夷山并称为“北夷南豸山，丹霞双绝' },
-	{ imgSrc: 'img/f8.png', title: '泰宁风景名胜区',
+	{ imgSrc: 'img/f8.png', title: '泰宁风景名胜区',href:'',
 		region: "三明", description: '以水上丹霞、峡谷群落、洞穴奇观、原始生态为主要景观特点' },
-	{ imgSrc: 'img/f9.png', title: '古田旅游区',
+	{ imgSrc: 'img/f9.png', title: '古田旅游区',href:'',
 		region: "龙岩", description: '古田民俗文化异彩纷呈，红军戏台、星火燎原蜡像馆、客家乡村' },
-	{ imgSrc: 'img/f10.png', title: '泰宁大金湖',
+	{ imgSrc: 'img/f10.png', title: '泰宁大金湖',href:'',
 		region: "三明", description: '具有幽、秀、奇、绝的独特风格和山青、水秀、石美、洞奇、峰怪特点' },
-	{ imgSrc: 'img/f11.png', title: '清源山',
+	{ imgSrc: 'img/f11.png', title: '清源山',href:'',
 		region: "泉州", description: '泉州最值得爬的山，老子的雕塑，雕刻的栩栩如生，且有千的历史' },
-	{ imgSrc: 'img/f12.png', title: '海坛岛',
+	{ imgSrc: 'img/f12.png', title: '海坛岛',href:'',
 		region: "福州", description: '东海仙境、石牌洋、海坛天神、南寨石林、三十六脚湖、仙人井' },
-	{ imgSrc: 'img/f13.png', title: '三坊七巷',
+	{ imgSrc: 'img/f13.png', title: '三坊七巷',href:'',
 		region: "福州", description: '白墙黛瓦的建筑，幽静古朴的街巷，感受岁月沧桑' },
-	{ imgSrc: 'img/f14.png', title: '平潭岛',
+	{ imgSrc: 'img/f14.png', title: '平潭岛',href:'',
 		region: "福州", description: '平潭岛，是中国最美海岛，海水湛蓝，海风微醺' },
-	{ imgSrc: 'img/f15.png', title: '福州国家森林公园',
+	{ imgSrc: 'img/f15.png', title: '福州国家森林公园',href:'',
 		region: "福州", description: '绝美的森林自然风光，植被繁茂苍翠，空气清新' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
-	{ imgSrc: 'img/f16.png', title: '福州西湖公园',
+	{ imgSrc: 'img/f16.png', title: '福州西湖公园',href:'',
 		region: "福州", description: '西湖栈道走一走，环境清幽舒适，感受古典园林的雅致，惬意悠闲' },
 
 	],
@@ -61,9 +61,11 @@ const scenery = [
 	page = Math.ceil(scenery.length / size), //向上取整进行显示
 	pagerCount = 7;
 
-// 当前选中的页数
-let current = 1;
-let currentRegion = "所有";
+
+let current = 1;// 当前选中的页数
+let currentRegion = "所有";// 当前筛选
+
+
 document.querySelectorAll('.sceneryclass li').forEach(item => {
 	item.addEventListener('click', function() {
 		currentRegion = this.querySelector('a').textContent;
@@ -76,10 +78,79 @@ document.querySelectorAll('.sceneryclass li').forEach(item => {
 	});
 });
 
+// 等待文档加载完成后执行
+document.addEventListener("DOMContentLoaded", function() {
+	// 获取搜索按钮和输入框
+	const searchButton = document.querySelector(".form-button img");
+	const searchInput = document.querySelector(".form-input input");
+
+	// 为搜索按钮添加点击事件处理函数
+	searchButton.addEventListener("click", function (event) {
+		event.preventDefault(); // 阻止默认的表单提交行为
+		performSearch();
+	});
+
+	// 为搜索输入框添加键盘按键事件处理函数
+	searchInput.addEventListener("keypress", function (event) {
+		if (event.key === "Enter") { // 检查是否按下回车键
+			event.preventDefault(); // 阻止默认的表单提交行为
+			performSearch();
+		}
+	});
+
+	// 搜索功能
+	function performSearch() {
+		const query = searchInput.value.trim(); // 获取输入框的值并去除空格
+
+		if (query) {
+			current = 1; // 重置当前页数为1
+			currentRegion = "所有"; // 重置当前筛选为“所有”
+			_pagination.style.display = 'none';
+			document.querySelectorAll('.sceneryclass li a').forEach(li => {
+				li.classList.remove('selected');
+			});
+			filteredSearch =
+				scenery.filter(item => item.title.toLowerCase().includes(query)); // 筛选标题包含搜索词的项目
+			// 每次遍历新内容首先清空
+			_content.innerHTML = "";
+			const totalItems = filteredSearch.length;
+			const totalPages = Math.ceil(totalItems / size);
+			if (totalItems === 0) {
+				// 如果筛选结果为空，显示无结果矢量图
+				const noResults = document.createElement("div");
+				noResults.className = "no-results";
+				noResults.innerHTML = `<img src="img/f0.png" alt="无结果" style="max-width: 100%; height: auto;">`;
+				_content.appendChild(noResults);
+				return totalPages;
+			}
+			// 遍历计算方法 当前为第1页 一页6个 第一页的数据就是 0 - 6(不包含) 第二页为  6- 12(不包含) 以此类推
+			filteredSearch.slice((current - 1) * size, current * size).forEach(item => {
+				// 每遍历一个创建一个li元素
+				const li = document.createElement("li");
+				// li元素添加内容
+				li.innerHTML = `
+					<a href="${item.href}">
+						<img src="${item.imgSrc}" alt="${item.title}">
+						<div>
+							<h3>${item.title}</h3>
+							<p>${item.description}</p>
+						</div>
+					</a>`;
+				// 添加到列表元素中
+				_content.appendChild(li);
+			});
+		} else {
+			alert("请输入搜索关键词");
+		}
+	}
+})
+
+
 // 显示内容列表
 const _content = document.querySelector(".scenerylist");
 const showContent = () => {
 	// 每次遍历新内容首先清空
+	_pagination.style.display = 'flex';
 	_content.innerHTML = "";
 	let filteredScenery = scenery;
 	if (currentRegion !== "所有") {
@@ -104,7 +175,7 @@ const showContent = () => {
 		const li = document.createElement("li");
 		// li元素添加内容
 		li.innerHTML = `
-			<a href="#">
+			<a href="${item.href}">
 				<img src="${item.imgSrc}" alt="${item.title}">
 				<div>
 					<h3>${item.title}</h3>
@@ -121,6 +192,7 @@ const showContent = () => {
 // 创建分页列表
 const _pagination = document.querySelector(".pagination");
 const createPagination = () => {
+
 	const totalPages = showContent();
 
 	// 刚开始就要有左按钮
